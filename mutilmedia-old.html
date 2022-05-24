@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styleing/animate.min.css">
+    <link rel="stylesheet" href="./styleing/base.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+ 
+  </head>
+  <body>
+    <div class="wrapper ">
+      <div class="parallax__group hero-container">
+        <div class="parallax__layer sky"></div>
+        <div class="parallax__layer bushes"></div>
+        <div class="parallax__layer water"></div>
+        <div class="parallax__layer people1"></div>
+        <div class="parallax__layer people2"></div>
+        <div class="parallax__layer people3"></div>
+        <div class="parallax__layer hero-text">
+            <a class="navbar-brand" href="./index.html">M <span class="home-h1-span">EIGHT</span></a>
+          <ul>
+            <li><a href="#" class="home-h1-span">MULTI </a> </li>
+            <li><a href="#">MEDIA</a></li>
+         
+          </ul>
+          <div class="year-container">
+            <div class="sign">
+                <span  class="fast-flicker">M</span>ULTI <br><span class="flicker">M</span>EDIA
+              </div>
+          </div>
+          <a class="link2" href="./mutilmedia.html">
+            <span class="">MULTI MEDIA</span>
+            <span class="link__line"></span>
+            <span class="link__arrow">  <span></span>
+            <span></span> </span>
+          </a>
+
+
+        </div>
+      </div>
+      <div  class="parallax__group info-container">
+          
+        <img class="selector"  src="./images/concert.jpg" alt="Lively and colourful concert" />
+        
+        <div class="text-container">
+          <h2   class="animate__animated animate__bounce">This is your MUTILMEDIA sector</h2>
+          <p>What would life be if we had no courage to attempt anything?</p><br>
+          <p>- Vincent Van Gogh</p><br><br>
+          <a href="#"class="btn"> Get Started Now</a>
+        </div>
+      </div>
+       <div  class="parallax__group info-container">
+        <img     src="./images/concert.jpg" alt="Lively and colourful concert" />
+        <div class="text-container">
+          <h2   class="animate__animated animate__bounce">This is your MUTILMEDIA sector</h2>
+          <p>What would life be if we had no courage to attempt anything?</p><br>
+          <p>- Vincent Van Gogh</p><br><br>
+          <a href="#" class="btn">Get Started Now</a>
+        </div>
+      </div>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+<script>
+    window.onload = function () {
+      lax.init()
+  
+      // Add a driver that we use to control our animations
+      lax.addDriver('scrollY', function () {
+        return window.scrollY
+      })
+  
+      // Add animation bindings to elements
+      lax.addElements('.selector', {
+        scrollY: {
+          translateX: [
+            ["elInY", "elCenterY"],
+            [0, 'screenWidth/2', 'screenWidth'],
+          ]
+        }
+      })
+    }
+  </script>
+   
+   
+  </body>
+
+  
+</html>
